@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    background-color: #f8e9ed; /* Soft pastel grey-pink */
+    color: #8b5e5e; /* Soft brown */
+    font-family: "Georgia", "Times New Roman", serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Centering the Container */
+.container {
+    width: 900px; /* Default desktop width */
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* White Card Design */
+.card-white {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for the Cards */
+.card-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Header */
+header h1 {
+    color: #b03a5b; /* Soft dark pink */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Profile Picture */
+.img-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #b03a5b;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-pic {
+    width: 180px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #b03a5b;
+    margin-bottom: 15px;
+}
+
+/* Social Links Inline */
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline > li {
+    display: inline;
+    padding: 0px 15px;
+}
+
+/* Social Icons */
+.list-inline a {
+    font-size: 24px;
+    color: #8b5e5e;
+    transition: 0.3s;
+}
+
+.list-inline a:hover {
+    color: #b03a5b;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #b03a5b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #8b5e5e;
+}
+
+/* Signup Form */
+.signup-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.signup-form input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #b03a5b;
+    border-radius: 4px;
+}
+
+.signup-form input[type="submit"] {
+    background: #b03a5b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-form input[type="submit"]:hover {
+    background: #8b5e5e;
+}
+
+/* Centering Text */
+.text-center {
+    text-align: center;
+}
+
+/* ------------------ 📱 Responsive Design (Media Queries) ------------------ */
+
+/* For tablets and small laptops */
+@media (max-width: 960px) {
+    .container {
+        width: 700px;
+    }
+    .img-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 190px;
+    }
+}
+
+/* For medium-sized tablets */
+@media (max-width: 720px) {
+    .container {
+        width: 500px;
+    }
+    .img-circle {
+        width: 90px;
+        height: 90px;
+    }
+    .profile-pic {
+        width: 130px;
+        height: 170px;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 540px) {
+    .container {
+        width: 90%;
+    }
+    .img-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 160px;
+    }
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .list-inline > li {
+        padding: 0px 10px;
+    }
+}
